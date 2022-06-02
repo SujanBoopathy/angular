@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <style>
+      *{
+        text-align: center;
+        background-color: bisque;
+      }
+      table{
+        width:50%;
+        text-align: center;
+        border-collapse: collapse;
+      }
+      table,tr,th,td{
+        border:1px solid black;
+      }
+      .sysTable{
+        margin-left: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>System Information</h1>
+  
+
+    <div class="sysTable">
+      
+        <table class="table" id="tab">
+          <thead>
+            <tr>
+              <th>CPU Usage</th>
+              <th>MEMORY Usage</th>
+            </tr>
+          </thead>
+        
+          <tbody>
+            <tr *ngFor="let s of posts">
+              <td>{{s.cpuUsage}}</td>
+              <td>{{s.memoryUsage}}</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+    </div>
+
+
+  </body>
+</html>
